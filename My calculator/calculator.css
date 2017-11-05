@@ -1,0 +1,92 @@
+body {
+    background: #414141;
+    background-size: cover;
+}
+
+.calculator {
+    background: radial-gradient(#505050, #2c2c2c);
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 5px;
+    border: 1px solid #333333;
+    box-shadow: 4px 4px 10px black;
+}
+
+h1{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#screen {
+    background: linear-gradient(#cfe0d0, #b9caba);
+    height: 40px!important;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 20px, 10px;
+    margin: 8px 0;
+    border: 2px solid blueviolet;
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.row button {
+    flex: 1;
+}
+
+button {
+    background: linear-gradient(#f4f4f4, #bebebe);
+    color: #333333;
+    border-radius: 4px;
+    border: 1px solid #2d2d2d;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+button:hover {
+    background: linear-gradient(#dbdadb, #ababab)!important;
+}
+
+button:active {
+    background: linear-gradient(#b6b6b6, #8e8e8e) !important;
+}
+
+#delete {
+    background: linear-gradient(#eeb808, #fc7e08);
+    
+}
+
+#delete:hover {
+    background: linear-gradient(#eb6208, #fc6f03)!important;
+}
+
+#delete:active {
+    background: linear-gradient(#be3233, #932323)!important;
+}
+#equal {
+    background: linear-gradient(#eeb808, #fc7e08);
+    
+}
+
+#equal:hover {
+    background: linear-gradient(#eb6208, #fc6f03)!important;
+}
+
+#equal:active {
+    background: linear-gradient(#be3233, #932323)!important;
+}

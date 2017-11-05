@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Javascript Calculator</title>
+        <meta name="description" content="Web Calculator using javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rahul Thapliyal - 2nd year CSE @ NITJ">
+        <script type="text/javascript" src="calculator.js"></script>
+        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="calculator.css" />
+    </head>
+    <body>
+            <h1> Simple Web Calculator</h1>
+        <div class="calculator">
+                <div class="output" id="output">
+                        <input type="text" readonly="readonly" name="screen" id="screen" style="width:99%" />
+                </div>
+                <div class="row">
+                    <button id="clear" value="clear" class="clear" onclick="reset()">AC</button>
+                    <button id="delete" value ="delete" class="delete" onclick="remove()">&larr;</button>
+                </div>
+                <div class="row">
+                    <button value="7" class="number" onclick="update(7)" >7</button>
+                    <button value="8" class="number" onclick="update(8)">8</button>
+                    <button value="9" class="number" onclick="update(9)">9</button>
+                    <button value="/" id="divide" class="operator" onclick="update('/')">&divide;</button>
+                </div>
+                 <div class="row">
+                    <button value="4" class="number" onclick="update(4)">4</button>
+                    <button value="5" class="number" onclick="update(5)">5</button>
+                    <button value="6" class="number" onclick="update(6)">6</button>
+                    <button value="*" id="multiply" class="operator" onclick="update('*')">x</button>
+                </div>
+                 <div class="row">
+                    <button value="1" class="number" onclick="update(1)">1</button>
+                    <button value="2" class="number" onclick="update(2)">2</button>
+                    <button value="3" class="number" onclick="update(3)">3</button>
+                    <button value="-" id="minus" class="operator" onclick="update('-')">-</button>
+                </div>
+                <div class="row">
+                    <button value="." class="number" onclick="update('.')">.</button>
+                    <button value="0" class="number" onclick="update(0)">0</button>
+                    <button value="+"  id="plus" class="operator" onclick="update('+')">+</button>
+                    <button value="=" id="equal" class="" onclick="result()">=</button>
+                </div>
+            </div>
+    </body>
